@@ -1,0 +1,278 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "To check the borrowing estimate of a borrower based on his details",
+        "description": "",
+        "id": "to-test-the-home-loan-calculator-feature-in-the-anz-home-loan-website;to-check-the-borrowing-estimate-of-a-borrower-based-on-his-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2500338703,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I open a web browser",
+            "match": {
+              "location": "LoanBorrowstimate.BrowserSetup()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 14165691168,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am in the Home Loan calculator page",
+            "match": {
+              "location": "LoanBorrowstimate.NavigateToHomeLoanPage()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 354864376,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter the details \"Single\" \"0\" \"ToLive\" of the borrower",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Single",
+                  "offset": 21
+                },
+                {
+                  "val": "0",
+                  "offset": 30
+                },
+                {
+                  "val": "ToLive",
+                  "offset": 34
+                }
+              ],
+              "location": "LoanBorrowstimate.EnterBorrowerDetails(String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 482998826,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter the earnings \"80000\" \"10000\" of the borrower",
+            "match": {
+              "arguments": [
+                {
+                  "val": "80000",
+                  "offset": 22
+                },
+                {
+                  "val": "10000",
+                  "offset": 30
+                }
+              ],
+              "location": "LoanBorrowstimate.EnterBorrowerEarnings(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3951317861,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter the expenses \"500\" \"0\" \"100\" \"0\" \"10000\" of the borrower",
+            "match": {
+              "arguments": [
+                {
+                  "val": "500",
+                  "offset": 22
+                },
+                {
+                  "val": "0",
+                  "offset": 28
+                },
+                {
+                  "val": "100",
+                  "offset": 32
+                },
+                {
+                  "val": "0",
+                  "offset": 38
+                },
+                {
+                  "val": "10000",
+                  "offset": 42
+                }
+              ],
+              "location": "LoanBorrowstimate.EnterBorrowerExpenses(String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 80121236,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Borrowing estimate of \"$479,000\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "$479,000",
+                  "offset": 23
+                }
+              ],
+              "location": "LoanBorrowstimate.BorrowingEstimateCalculation(String)"
+            },
+            "matchedColumns": [
+              10
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "Clearing of the entered data in the form",
+        "description": "",
+        "id": "to-test-the-home-loan-calculator-feature-in-the-anz-home-loan-website;clearing-of-the-entered-data-in-the-form",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5210880966,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I click the start over button",
+            "match": {
+              "location": "LoanBorrowstimate.Startover()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2479326200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I close the Browser",
+            "match": {
+              "location": "LoanBorrowstimate.CloseBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "To verify the message text when we enter only 1$ for living expense field",
+        "description": "",
+        "id": "to-test-the-home-loan-calculator-feature-in-the-anz-home-loan-website;to-verify-the-message-text-when-we-enter-only-1$-for-living-expense-field;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1707519376,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I open a web browser",
+            "match": {
+              "location": "LoanBorrowstimate.BrowserSetup()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 9628874329,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I am in the Home Loan calculator page",
+            "match": {
+              "location": "LoanBorrowstimate.NavigateToHomeLoanPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2263931878,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I enter \"1\" for the living expense and submit",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 9
+                }
+              ],
+              "location": "LoanBorrowstimate.EnterOnlyLivingExpense(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 161561138,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I get an message stating we are unable to give you a quote",
+            "match": {
+              "location": "LoanBorrowstimate.VerifyUnableToGetQuoteMsg()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 138188428,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "I close the Browser",
+            "match": {
+              "location": "LoanBorrowstimate.CloseBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "To test the home loan calculator feature in the ANZ home loan website",
+    "description": "",
+    "id": "to-test-the-home-loan-calculator-feature-in-the-anz-home-loan-website",
+    "keyword": "Feature",
+    "uri": "LoanCalculaterScenarios.feature"
+  }
+]
